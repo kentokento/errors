@@ -1,6 +1,6 @@
 #!/bin/sh
 
-lines=$(grep -o -e 'new[A-Z].*' ../define_*)
+lines=$(grep -o -e 'new[A-Z].*' ../define_* -H)
 
 out=$(cat << EOS
 # Error Codes
